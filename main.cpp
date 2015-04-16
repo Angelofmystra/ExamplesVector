@@ -22,7 +22,6 @@ void make(std::vector<Foo>& c, int&& a, std::string&& s){
     c.push_back(e);
 }
 
-//std::unique_ptr<Foo> e(new Foo(a,s));
 int main()
 {
     // it is better to use std::vector over std::list

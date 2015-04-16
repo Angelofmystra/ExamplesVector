@@ -17,8 +17,10 @@ private:
 // vector is taken as an address
 // int and string are taken using forward addresses, or universal addresses
 void make(std::vector<Foo>& c, int&& a, std::string&& s){
-    Foo e{a,s};    // member initialization is called
+    Foo e{a,s};     // member initialization is called
                     // you can trust vectors to clean up after themselves.
+                    // Foo lacks any resources to manage (such as created with new).
+                    // If it did, then you'd need to clean that up in the destructor ~Foo(){ /*...*/ }
     c.push_back(e);
 }
 

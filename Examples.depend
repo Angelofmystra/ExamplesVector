@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1429226154 source:c:\users\bertrand\documents\templatesamples\examples\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<memory>
+	<iterator>
+
